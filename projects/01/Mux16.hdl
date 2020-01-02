@@ -14,5 +14,69 @@ CHIP Mux16 {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    Not(in=sel, out=selA);
+
+    And(a=a[0], b=selA, out=compA0);
+    And(a=b[0], b=sel, out=compB0);
+    Or(a=compA0, b=compB0, out=out[0]);
+
+    And(a=a[1], b=selA, out=compA1);
+    And(a=b[1], b=sel, out=compB1);
+    Or(a=compA1, b=compB1, out=out[1]);
+
+    And(a=a[2], b=selA, out=compA2);
+    And(a=b[2], b=sel, out=compB2);
+    Or(a=compA2, b=compB2, out=out[2]);
+
+    And(a=a[3], b=selA, out=compA3);
+    And(a=b[3], b=sel, out=compB3);
+    Or(a=compA3, b=compB3, out=out[3]);
+
+    And(a=a[4], b=selA, out=compA4);
+    And(a=b[4], b=sel, out=compB4);
+    Or(a=compA4, b=compB4, out=out[4]);
+
+    And(a=a[5], b=selA, out=compA5);
+    And(a=b[5], b=sel, out=compB5);
+    Or(a=compA5, b=compB5, out=out[5]);
+
+    And(a=a[6], b=selA, out=compA6);
+    And(a=b[6], b=sel, out=compB6);
+    Or(a=compA6, b=compB6, out=out[6]);
+
+    And(a=a[7], b=selA, out=compA7);
+    And(a=b[7], b=sel, out=compB7);
+    Or(a=compA7, b=compB7, out=out[7]);
+
+    And(a=a[8], b=selA, out=compA8);
+    And(a=b[8], b=sel, out=compB8);
+    Or(a=compA8, b=compB8, out=out[8]);
+
+    And(a=a[9], b=selA, out=compA9);
+    And(a=b[9], b=sel, out=compB9);
+    Or(a=compA9, b=compB9, out=out[9]);
+
+    And(a=a[10], b=selA, out=compA10);
+    And(a=b[10], b=sel, out=compB10);
+    Or(a=compA10, b=compB10, out=out[10]);
+
+    And(a=a[11], b=selA, out=compA11);
+    And(a=b[11], b=sel, out=compB11);
+    Or(a=compA11, b=compB11, out=out[11]);
+
+    And(a=a[12], b=selA, out=compA12);
+    And(a=b[12], b=sel, out=compB12);
+    Or(a=compA12, b=compB12, out=out[12]);
+
+    And(a=a[13], b=selA, out=compA13);
+    And(a=b[13], b=sel, out=compB13);
+    Or(a=compA13, b=compB13, out=out[13]);
+
+    And(a=a[14], b=selA, out=compA14);
+    And(a=b[14], b=sel, out=compB14);
+    Or(a=compA14, b=compB14, out=out[14]);
+
+    And(a=a[15], b=selA, out=compA15);
+    And(a=b[15], b=sel, out=compB15);
+    Or(a=compA15, b=compB15, out=out[15]);
 }
